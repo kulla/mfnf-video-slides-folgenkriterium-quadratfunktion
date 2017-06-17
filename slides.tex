@@ -13,10 +13,24 @@
 
 \begin{document}
   \begin{frame}
-    \titlepage
+    \frametitle{Aufgabe}
+
+    Zeige, dass die Quadratfunktion $f:\R\to\R:x\mapsto x^2$ stetig ist.
   \end{frame}
 
   \begin{frame}
-    \frametitle{}
+    \frametitle{Beweis}
+
+    \uncover<2->{Sei $f:\R\to\R:x\mapsto x^2$}. \uncover<3->{Sei $\tilde x\in\R$ beliebig}\uncover<4->{ und sei $(x_n)_{n\in\N}$ eine Folge, die gegen $\tilde x$ konvergiert.}
+
+    \begin{align*}
+      \uncover<5->{\lim_{n\to\infty} f(x_n)} &
+      \uncover<6->{= \lim_{n\to\infty} x_n^2} \\
+      \uncover<7->{&= \lim_{n\to\infty} x_n \cdot x_n} \\
+      \uncover<8->{&= \lim_{n\to\infty} x_n \cdot \lim_{n\to\infty} x_n} \\
+      \uncover<9->{&= \tilde x^2 = f(\tilde x)}
+    \end{align*}
+
+    \uncover<10->{Damit ist $f$ nach dem Folgenkriterium stetig.}
   \end{frame}
 \end{document}
