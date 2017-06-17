@@ -2,4 +2,4 @@
 all: slides.pdf
 
 slides.pdf: slides.tex
-	pdflatex -halt-on-error -interaction batchmode $<
+	pdflatex -halt-on-error -interaction errorstopmode $<
