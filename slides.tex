@@ -1,4 +1,4 @@
-\documentclass[aspectratio=169]{beamer}
+\documentclass[aspectratio=169,xcolor={dvipsnames,svgnames,table}]{beamer}
 
 \usepackage{centernot}
 \beamertemplatenavigationsymbolsempty
@@ -25,17 +25,18 @@
   \begin{frame}
     \frametitle{Beweis}
 
-    \uncover<2->{Sei $f:\R\to\R:x\mapsto x^2$}. \uncover<3->{Sei $\tilde x\in\R$ beliebig}\uncover<4->{ und sei $(x_n)_{n\in\N}$ eine Folge, die gegen $\tilde x$ konvergiert.}
+    \uncover<2->{Sei $f:\R\to\R:x\mapsto x^2$.} \uncover<3->{Sei $\tilde x\in\R$ beliebig}\uncover<4->{ und sei $(x_n)_{n\in\N}$ eine Folge, die gegen $\tilde x$ konvergiert.}
 
     \begin{align*}
       \uncover<5->{\lim_{n\to\infty} f(x_n)} &
       \uncover<6->{= \lim_{n\to\infty} x_n^2} \\
-      \uncover<7->{&= \lim_{n\to\infty} x_n \cdot x_n} \\
-      \uncover<8->{&= \left(\lim_{n\to\infty} x_n\right) \cdot \left(\lim_{n\to\infty} x_n\right)} \\
-      \uncover<9->{&= \tilde x^2 = f(\tilde x)}
+      \uncover<7->{&= \lim_{n\to\infty} x_n \cdot x_n} \\[0.5em]
+      \uncover<8->{&\ {\color{Gray}\left\downarrow\ \text{Grenzwertsatz} \right.}} \\[0.5em]
+      \uncover<9->{&= \left(\lim_{n\to\infty} x_n\right) \cdot \left(\lim_{n\to\infty} x_n\right)} \\
+      \uncover<10->{&= \tilde x \cdot \tilde x = \tilde x^2 = f(\tilde x)}
     \end{align*}
 
-    \uncover<10->{Damit ist $f$ nach dem Folgenkriterium stetig.}
+    \uncover<11->{Damit ist $f$ nach dem Folgenkriterium stetig.}
   \end{frame}
 
   \begin{frame}
